@@ -9,6 +9,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
   </http:listener-config>
   <flow name="gittestFlow" doc:id="0c35974b-4b67-42cc-809c-01ddd10edc16" >
     <http:listener doc:name="Listener" doc:id="a1733c7d-b71a-4c74-a23c-c85a813f0791" config-ref="HTTP_Listener_config" path="/gittest"/>
-    <set-payload value="HOW ARE YOU?" doc:name="Set Payload" doc:id="f5d726de-38f9-4b3e-8ed1-422fdea34bcf" />
+    <set-payload value="HOW ARE YOU MAN?" doc:name="Set Payload" doc:id="f5d726de-38f9-4b3e-8ed1-422fdea34bcf" />
   </flow>
 </mule>
