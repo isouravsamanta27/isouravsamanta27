@@ -5,7 +5,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
   <http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="bd41f430-8b17-4ecb-8087-53fd16f61ccd" >
-    <http:listener-connection host="0.0.0.0" port="8081" />
+    <http:listener-connection host="0.0.0.0" port="${http.port}" />
   </http:listener-config>
   <flow name="gittestFlow" doc:id="0c35974b-4b67-42cc-809c-01ddd10edc16" >
     <http:listener doc:name="Listener" doc:id="a1733c7d-b71a-4c74-a23c-c85a813f0791" config-ref="HTTP_Listener_config" path="/gittest"/>
